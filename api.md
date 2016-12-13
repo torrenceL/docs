@@ -1,10 +1,22 @@
 # API
 
+配网 接口 回调函数
+
+配置参数接口
+
+OTA 接口
+
+
 ## external function
 
 ```
 ej_ret ej_init_handle(ej_handler *handle);
 ```
+
+```
+ej_set_config
+```
+
 
 ```
 ej_ret ej_detroy_handle(ej_handler *handle);
@@ -35,8 +47,21 @@ ej_ret ej_disconnect(ej_handler *handler);
 ```
 
 ```
-ej_ret ej_snd_proprity_msg(uint8_t *payload);
+//ej_ret ej_snd_proprity_msg(uint8_t *payload);
 ```
+
+//
+ej_ret ej_subscribe(uint8_t *topic, ej_callback func);
+
+//
+ej_set_network(int status)
+
+
+set_sdk_log_level()
+
+ej_printf(modue, ...);
+
+// 
 
 ## internal function
 
@@ -166,4 +191,8 @@ int16_t uart_read(const uint8_t *buf, uint32_t len);
 
 ```
 int16_t uart_write(uint8_t *buf, uint32_t len);
+```
+
+```
+printf
 ```
