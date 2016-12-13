@@ -1,0 +1,153 @@
+# API
+
+## external function
+
+```
+ej_ret ej_init_handle(ej_handler *handle);
+```
+
+```
+ej_ret ej_detroy_handle(ej_handler *handle);
+```
+
+```
+ej_ret ej_set_channel(uint8_t *mac);
+```
+
+```
+ej_ret ej_set_connect_callback(ej_callback lost_connect_callback, ej_callback restore_connect_callback);
+```
+
+```
+ej_ret ej_set_thread_priority(int priority);
+```
+
+```
+ej_ret ej_set_thread_stacksize(ej_handler *handle, int size);
+```
+
+```
+ej_ret ej_connect(ej_handler *handler);
+```
+
+```
+ej_ret ej_disconnect(ej_handler *handler);
+```
+
+```
+ej_ret ej_snd_proprity_msg(uint8_t *payload);
+```
+
+## internal function
+
+```
+timer_init
+```
+
+```
+time_is_expired
+```
+
+```
+time_countdown
+```
+
+```
+time_left
+```
+
+```
+network_init
+```
+
+```
+network_connect
+```
+
+```
+network_disconnect
+```
+
+```
+network_write
+```
+
+```
+network_read
+```
+
+```
+network_udp_create
+```
+
+```
+network_udp_bind
+```
+
+```
+network_udp_write
+```
+
+```
+network_udp_read
+```
+
+```
+network_udp_close
+```
+
+```
+mutex_init
+```
+
+```
+mutex_lock
+```
+
+```
+mutex_unlock
+```
+
+```
+mutex_deinit
+```
+
+```
+semaphore_int
+```
+
+```
+semaphore_deinit
+```
+
+```
+semaphore_wait
+```
+
+```
+semaphore_post
+```
+
+```
+thread_create(thread *th, init priority, const char *name, void (*founc)(void *), int stack_size, void *arg)
+```
+
+```
+thread_join(thread *th, int)
+```
+
+```
+thread_destroy(thread *th)
+```
+
+```
+sleep(int ms);
+```
+
+```
+plat_malloc(int size)
+```
+
+```
+plat_free(void *mem); 
+```
