@@ -4,7 +4,7 @@
 * uart 收发模块，该部分主要负责从 uart 口读取数据。
 * uart 数据处理模块。
 * 消息中心处理模块。主要负责消息分发给不同的模块。
-* mqtt 模块。该模块主要负责 mqtt 通讯
+* mqtt 模块。该模块主要负责 mqtt 通讯。
 * udp server 模块。主要处理局域网的数据查询。
 * tcp server 模块。用于 ap 配网使用。
 * smart config 模块。主要用于配网使用。
